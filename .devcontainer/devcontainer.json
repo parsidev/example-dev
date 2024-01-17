@@ -1,7 +1,7 @@
 {
   "name": "Go with PostgreSQL Dev Container",
-  "dockerComposeFile": ["./docker-compose.yml"],  // Adjust the path as needed
+  "dockerComposeFile": ["../docker-compose.yml"],
   "service": "app",
-  "workspaceFolder": "/workspace/app",
+  "workspaceFolder": "/go/src/app",
   "extensions": ["golang.go"]
 }
