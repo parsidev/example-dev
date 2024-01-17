@@ -1,12 +1,14 @@
-version: '3.8'
+# docker-compose.yml
+
+version: '3'
 services:
   app:
     build:
       context: .
-      dockerfile: db/Dockerfile
-    command: ["go", "run", "main.go"]
+      dockerfile: Dockerfile
+    command: ["go", "run", "app/main.go"]
     volumes:
-      - .:/workspace/app
+      - ./app:/go/src/app
     ports:
       - "8080:8080"
     depends_on:
